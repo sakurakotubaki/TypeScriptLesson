@@ -1,9 +1,14 @@
 "use strict";
-/* eslint-disable */
-let text = "Hi!";
-let phone = 123456789;
-const arr = ["Taro", 25];
-function say(greet) {
-    return greet;
+function getUser() {
+    return new Promise((resolve) => {
+        const user = {
+            name: "太郎",
+            age: 10,
+        };
+        resolve(user);
+    });
 }
-console.log(say("Hi, My name is Tom"));
+getUser().then((user) => {
+    console.log(user);
+    // @log: { "name": "太郎", "age": 10 }
+});

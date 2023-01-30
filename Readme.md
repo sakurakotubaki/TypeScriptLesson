@@ -40,3 +40,15 @@ let text:string = "Hi!";
 let phone:number = 123456789;
 const arr:(string|number)[] = ["Taro", 25];
 ```
+
+7. Prettierrcを導入
+
+Prettierrcをinstall.
+```
+npm i -D prettier
+```
+
+src配下のファイル全てに、Prettierrcのルールを適用.
+```
+npx prettier --write src
+```

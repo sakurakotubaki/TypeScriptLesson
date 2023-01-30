@@ -1,10 +1,9 @@
-/* eslint-disable */
-let text:string = "Hi!";
-let phone:number = 123456789;
-const arr:(string|number)[] = ["Taro", 25];
-
-function say(greet: string) {
-  return greet;
-}
-
-console.log(say("Hi, My name is Tom"));
+type User = {
+  id: string;
+  name: string;
+  age: number;
+};
+getUser().then((user: User) => {
+  console.log(user);
+  // @log: { "name": "太郎", "age": 10 }
+});

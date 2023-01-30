@@ -2,14 +2,14 @@
 function getUser() {
     return new Promise((resolve) => {
         const user = {
-            id: "11111",
-            name: "太郎",
-            age: 10,
+            id: "X0032",
+            name: "山田花子",
+            age: 25,
         };
         resolve(user);
     });
 }
+
 getUser().then((user) => {
     console.log(user);
-    // @log: { "name": "太郎", "age": 10 }
 });
